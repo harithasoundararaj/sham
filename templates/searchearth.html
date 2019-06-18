@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<header>
+<b>
+Soundararaj, Haritha : 1001624272
+</b>
+</header>
+<p>Execution Time is {{t}}</p>
+<p>
+{% block content %}
+{% for city in ci %}
+ 
+  <!-- This retrives all the data based on the content typed in textbox of index.html -->
+  <p>The mag is <b>({{city["mag"]}})</b> the time is <b> ({{city["time"]}}) </b>.
+
+{% endfor %}
+{% endblock %}
+</p>
+</body>
+</html>
